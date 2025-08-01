@@ -1,0 +1,43 @@
+// 1. Destructuring basic properties
+const student = {
+  name: "Celine",
+  age: 21,
+  course: "Cybersecurity"
+};
+
+const { name, age } = student;
+console.log("Name:", name); 
+console.log("Age:", age);   
+
+// 2. Destructuring with default value
+const user = {
+  username: "celine21"
+};
+
+const { username, email = "not_provided@example.com" } = user;
+console.log("Username:", username); 
+console.log("Email:", email);     
+
+// 3. Destructuring nested object
+const profile = {
+  name: "Celine",
+  address: {
+    city: "Chennai",
+    country: "India"
+  }
+};
+
+const { address: { city, country } } = profile;
+console.log("City:", city);       
+console.log("Country:", country);
+
+// 4. Spread operator - clone object
+const original = { a: 1, b: 2 };
+const clone = { ...original };
+console.log("Cloned object:", clone); 
+
+// 5. Spread operator - merge objects
+const obj1 = { name: "Celine" };
+const obj2 = { age: 21 };
+const merged = { ...obj1, ...obj2 };
+console.log("Merged object:", merged); 
