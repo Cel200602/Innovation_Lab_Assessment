@@ -1,31 +1,31 @@
 // 1. filter(): Get numbers greater than 10
 const numbers = [5, 12, 8, 20];
 const bigNumbers = numbers.filter(n => n > 10);
-console.log("Numbers > 10:", bigNumbers); // [12, 20]
+console.log("Numbers > 10:", bigNumbers);
 
 // 2. reduce(): Add all numbers
 const total = numbers.reduce((sum, n) => sum + n, 0);
-console.log("Total sum:", total); // 45
+console.log("Total sum:", total);
 
 // 2. reduce(): Join words into a sentence
 const words = ["I", "love", "coding"];
 const sentence = words.reduce((a, b) => a + " " + b);
-console.log("Sentence:", sentence); // "I love coding"
+console.log("Sentence:", sentence); 
 
 // 3. slice(): Get part of an array
 const colors = ["red", "green", "blue", "yellow"];
-const someColors = colors.slice(1, 3); // from index 1 to 2
-console.log("Sliced colors:", someColors); // ['green', 'blue']
+const someColors = colors.slice(1, 3); 
+console.log("Sliced colors:", someColors); 
 
 // 4. splice(): Remove and add items
 const fruits = ["apple", "banana", "cherry"];
-fruits.splice(1, 1, "mango"); // remove banana, add mango
-console.log("Fruits after splice:", fruits); // ['apple', 'mango', 'cherry']
+fruits.splice(1, 1, "mango"); 
+console.log("Fruits after splice:", fruits);
 
 // 5. Spread (...): Clone and merge arrays
 const a = [1, 2];
 const b = [3, 4];
 const cloneA = [...a];
 const merged = [...a, ...b];
-console.log("Cloned array a:", cloneA); // [1, 2]
-console.log("Merged arrays:", merged); // [1, 2, 3, 4]p
+console.log("Cloned array a:", cloneA);
+console.log("Merged arrays:", merged); 
