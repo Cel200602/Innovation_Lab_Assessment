@@ -1,0 +1,18 @@
+const nums = [1, 2, 3, 4];
+
+// forEach: print each number
+nums.forEach(n => console.log("Number:", n));
+
+// map: square each number
+const squares = nums.map(n => n * n);
+console.log("Squares:", squares); 
+
+// for-in: loop over indexes
+for (let i in nums) {
+  console.log("Index:", i, "Value:", nums[i]);
+}
+
+// for-of: loop over values
+for (let n of nums) {
+  console.log("Value:", n);
+}
