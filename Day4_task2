@@ -1,0 +1,17 @@
+let numbers = [10, 20, 30];
+let fruits = ["apple", "banana"];
+
+// Access
+console.log(numbers[0]); 
+
+// Modify
+fruits[1] = "mango";
+
+// Length
+console.log(fruits.length);
+
+// Add/Remove
+numbers.push(40);        
+numbers.pop();           
+fruits.shift();          
+fruits.unshift("kiwi");  
