@@ -12,14 +12,14 @@ const student = {
   }
 };
 
-student.showInfo(); // Show info
+student.showInfo(); 
 
 // 2. Change and add student details
-student.age = 21;          // Change age
-student.grade = "A";       // Add grade
+student.age = 21;          
+student.grade = "A";       
 
-console.log("Updated Age:", student.age);   // 21
-console.log("Grade:", student.grade);       // A
+console.log("Updated Age:", student.age);   
+console.log("Grade:", student.grade);       
 
 // 3. Create a car object
 const car = {
@@ -38,6 +38,6 @@ const car = {
   }
 };
 
-car.start();          // Start the car
-car.changeYear(2025); // Update year
-console.log("New Year:", car.year); // 2025
+car.start();          
+car.changeYear(2025); 
+console.log("New Year:", car.year);
