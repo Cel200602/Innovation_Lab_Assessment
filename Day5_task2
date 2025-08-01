@@ -1,0 +1,43 @@
+// 1. Create a student object
+const student = {
+  name: "Celine",
+  age: 20,
+  course: "Cybersecurity",
+
+  // Method to show student info
+  showInfo: function() {
+    console.log("Name:", this.name);
+    console.log("Age:", this.age);
+    console.log("Course:", this.course);
+  }
+};
+
+student.showInfo(); // Show info
+
+// 2. Change and add student details
+student.age = 21;          // Change age
+student.grade = "A";       // Add grade
+
+console.log("Updated Age:", student.age);   // 21
+console.log("Grade:", student.grade);       // A
+
+// 3. Create a car object
+const car = {
+  brand: "Toyota",
+  model: "Innova",
+  year: 2022,
+
+  // Start the car
+  start: function() {
+    console.log(this.brand + " " + this.model + " started.");
+  },
+
+  // Change the year
+  changeYear: function(newYear) {
+    this.year = newYear;
+  }
+};
+
+car.start();          // Start the car
+car.changeYear(2025); // Update year
+console.log("New Year:", car.year); // 2025
